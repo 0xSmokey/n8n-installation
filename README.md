@@ -2,23 +2,20 @@
 
 ### Add Firewall 
 ```
-sudo apt update && apt upgrade
+# Update system
+sudo apt update && sudo apt upgrade -y
 
-# Enable firewall
-ufw enable
-
-# Allow HTTP and HTTPS
-ufw allow 80/tcp
-ufw allow 443/tcp
-ufw allow 22/tcp
-
-# Check status
-ufw status
+# Configure firewall safely
+sudo ufw allow 22/tcp
+sudo ufw allow 80/tcp
+sudo ufw allow 443/tcp
+sudo ufw enable
+sudo ufw status
 ```
 
 ### Get and run the installation 
 ```
-# Download the script
+# Download the raw installation script
 wget https://raw.githubusercontent.com/0xSmokey/n8n-installation/main/installscript.sh
 
 # Make it executable
