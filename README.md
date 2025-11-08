@@ -19,7 +19,8 @@ POSTGRES_USER=postgress_user
 POSTGRES_PASSWORD=paswd
 POSTGRES_DB=n8n_database
 
-GENERIC_TIMEZONE=timeZone```
+GENERIC_TIMEZONE=timeZone
+```
 
 ### run n8n 
 
